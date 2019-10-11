@@ -1,0 +1,93 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin button($bgcolor: null, $color: null, $mw: null, $boxshadow: null) {
+	border: 0;
+	cursor: pointer;
+	padding: 1.5rem;
+	min-width: $mw;
+	color: $color;
+	background-color: $bgcolor;
+	text-transform: uppercase;
+	outline: none;
+	box-shadow: $boxshadow;
+	font-family: inherit;
+	transition: .2s;
+}
+
+@mixin gradient($color1, $color2, $alpha1: 1, $alpha2: 1,$direction: to right) {
+	background-image: linear-gradient($direction, rgba($color1, $alpha1), rgba($color2, $alpha2));
+}
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin centerPosition($pos) {
+	position: absolute;
+	@if $pos == "both" {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else if $pos == "left" {
+		left: 50%;
+		transform: translateX(-50%);
+	} @else if $pos == "top" {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+}
+
+@mixin radius($all: null, $tl: $all, $tr: $all, $btl: $all, $btr: $all) {
+	border-top-left-radius: $tl;
+	border-top-right-radius: $tr ;
+	border-bottom-right-radius: $btr;
+	border-bottom-left-radius: $btl;
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin absolute($args...) {
+	@include position(absolute, $args...);
+}
+
+@mixin relative($args...) {
+	@include position(relative, $args...);
+}
+
+@mixin fixed($args...) {
+	@include position(fixed, $args...);
+}
+
+@mixin toRem($size) {
+	font-size: ($size / 16px ) * 1rem;
+}
+
+@mixin minWidth($breakpoint) {
+	@media only screen and (min-width: $breakpoint) {	@content;	}
+}
+
+@mixin maxWidth($breakpoint) {
+	@media only screen and (max-width: $breakpoint) {	@content;	}
+}
+
+@mixin flex($direction: row, $content: null , $items: null, $wrap: null) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $content;
+	align-items: $items;
+	flex-wrap: $wrap;
+}

@@ -1,0 +1,15 @@
+mixin link(href)
+	if !href
+		a(href="javascript:void(0)")&attributes(attributes)
+			if block
+				block
+	else
+		a(href=href)&attributes(attributes)
+			if block
+				block
+
+mixin img(src, alt)
+	if !alt
+		img(src=src, alt="")&attributes(attributes)
+	else
+		img(src=src, alt=alt)&attributes(attributes)
