@@ -152,10 +152,10 @@ function fonts() {
  * ------ */
 
 async function clean() {
-	return Promise.resolve(del("public"));
+	return Promise.resolve(del.sync("public"));
 }
 
-async function watchFiles() {
+function watchFiles() {
 	gulp.watch(options.pug.all, views);
 	gulp.watch(options.styles.src, styles);
 	gulp.watch(options.scripts.src, scripts);

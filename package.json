@@ -1,5 +1,5 @@
 {
-	"name": "frontend workflow",
+	"name": "frontend-workflow",
 	"version": "1.0.0",
 	"description": "A basic front-end workflow using Gulp",
 	"main": "index.js",
