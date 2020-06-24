@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+.header1 {
+  background: #202020;
+  height: 32px;
+  &__text {
+    color: #828282;
+    &__Left {
+      font-family: "Roboto", sans-serif;
+    }
+    &__Right {
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
+
+.header2 {
+  background: #efefef;
+  height: 145px;
+}
+
+.header3 {
+  background: #3fb871;
+  height: 49px;
+}

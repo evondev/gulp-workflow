@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+.header1 {
+  background: #202020;
+  height: 32px; }
+  .header1__text {
+    color: #828282; }
+    .header1__text__Left {
+      font-family: "Roboto", sans-serif; }
+    .header1__text__Right {
+      font-family: "Roboto", sans-serif; }
+
+.header2 {
+  background: #efefef;
+  height: 145px; }
+
+.header3 {
+  background: #3fb871;
+  height: 49px; }
+
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
