@@ -1,3 +1,40 @@
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: #251d1d;
+  color: white;
+  font-family: serif; }
+  .header .header_top {
+    height: 30px;
+    background: red; }
+    .header .header_top .top_li {
+      display: inline-block; }
+      .header .header_top .top_li a {
+        color: black;
+        text-decoration: none; }
+  .header .header_img {
+    width: 30%;
+    float: left; }
+    .header .header_img img {
+      height: 90px;
+      width: 70%; }
+  .header .header_nav {
+    float: right;
+    width: 60%; }
+    .header .header_nav ul {
+      text-decoration: none;
+      width: 100%;
+      line-height: 70px; }
+      .header .header_nav ul li {
+        display: inline-block;
+        width: 100px; }
+        .header .header_nav ul li a {
+          list-style-type: none;
+          color: white;
+          text-decoration: none; }
+      .header .header_nav ul li a:hover {
+        color: yellow; }
+
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
