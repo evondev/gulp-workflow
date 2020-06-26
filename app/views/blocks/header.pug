@@ -1,23 +1,25 @@
 .header
   .container
-    section.header__section
-      .header__logo
-        span
-        img(src="./images/logo.png")
-      .header__nav
-        ul.category
-          li.category__item
-            a.category__link(href="#") TRANG CHỦ
-          li.category__item
-            a.category__link(href="#") GIỚI THIỆU
-          li.category__item
-            a.category__link(href="#") SẢN PHẨM
-          li.category__item
-            a.category__link(href="#") TIN TỨC
-          li.category__item
-            a.category__link(href="#") BẢN ĐỒ
-          li.category__item
-            a.category__link(href="#") LIÊN HỆ
-      .header__icon
-        i.fas.fa-shopping-cart
-        i.fas.fa-search
+    .row
+      .col-xs-2.col-sm-2.col-md-2.col-lg-2
+        .header__logo
+          span
+          img(src="./images/logo.png")
+      .col-xs-6.col-sm-6.col-md-6.col-lg-6
+        .header__nav
+          ul.category
+            - var arr_menu = [{path: "#trangchu",name: 'TRANG CHỦ'}, {path: "#gioithieu",name: "GIỚI THIỆU"}, {path: "#sanpham",name: "SẢN PHẨM"}, {path: "#tintuc",name: "TIN TỨC"}, {path: "#bando",name: "BẢN ĐỒ"}, {path: "#lienhe",name: "LIÊN HỆ"}]
+            
+            - for (var i=0; i<arr_menu.length; i++ )
+              li.category__item
+                a.category__link(href=arr_menu[i].path)= arr_menu[i].name
+      .col-xs-2.col-sm-2.col-md-2.col-lg-2
+        .header__icon
+          i.fas.fa-shopping-cart
+          i.fas.fa-search
+
+.slide
+  .slide__item
+    img(src="./images/slide.png")
+    a(href="#") MUA HÀNG
+    

@@ -11,11 +11,9 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
-    
-    <!-- Latest compiled and minified CSS & JS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-   
-    
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -23,20 +21,121 @@
     <div class="wrapper">
       <div class="header">
         <div class="container">
-          <section class="header__section">
-            <div class="header__logo"><span></span><img src="./images/logo.png"></div>
-            <div class="header__nav">
-              <ul class="category">
-                <li class="category__item"><a class="category__link" href="#">TRANG CHỦ</a></li>
-                <li class="category__item"><a class="category__link" href="#">GIỚI THIỆU</a></li>
-                <li class="category__item"><a class="category__link" href="#">SẢN PHẨM</a></li>
-                <li class="category__item"><a class="category__link" href="#">TIN TỨC</a></li>
-                <li class="category__item"><a class="category__link" href="#">BẢN ĐỒ</a></li>
-                <li class="category__item"><a class="category__link" href="#">LIÊN HỆ</a></li>
-              </ul>
+          <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="header__logo"><span></span><img src="./images/logo.png"></div>
             </div>
-            <div class="header__icon"><i class="fas fa-shopping-cart"></i><i class="fas fa-search"></i></div>
-          </section>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="header__nav">
+                <ul class="category">
+                  <li class="category__item"><a class="category__link" href="#trangchu">TRANG CHỦ</a></li>
+                  <li class="category__item"><a class="category__link" href="#gioithieu">GIỚI THIỆU</a></li>
+                  <li class="category__item"><a class="category__link" href="#sanpham">SẢN PHẨM</a></li>
+                  <li class="category__item"><a class="category__link" href="#tintuc">TIN TỨC</a></li>
+                  <li class="category__item"><a class="category__link" href="#bando">BẢN ĐỒ</a></li>
+                  <li class="category__item"><a class="category__link" href="#lienhe">LIÊN HỆ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="header__icon"><i class="fas fa-shopping-cart"></i><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide__item"><img src="./images/slide.png"><a href="#">MUA HÀNG</a></div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="contact">
+                <h3>Liên Hệ với chúng tôi</h3>
+                <ul class="list__sub">
+                  <li class="list__sub-item"><i class="fas fa-map-marker-alt"></i>
+                    <p>Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội</p>
+                  </li>
+                  <li class="list__sub-item"><i class="fas fa-phone-volume"> </i>
+                    <p>(04) 6674 2332 -</p><i class="fas fa-phone"> </i>
+                    <p>(04) 3786 8904</p>
+                  </li>
+                  <li class="list__sub-item"><i class="fas fa-phone-volume"> </i>
+                    <p>(08) 6680 9686</p><i class="fas fa-envelope"></i>
+                    <p>Support@bizweb.vn</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="shipping">
+                <h3>Chuyển Hàng</h3>
+                <ul class="list__sub">
+                  <li class="list__sub-item">mua sắm trực tuyến</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Đến từ chúng tôi gửi đến</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Chính sách vận chuyển</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">vận chuyển thông tin</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="support">
+                <h3>Hỗ trợ</h3>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Câu chuyện của chúng ta</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Thanh toán an toàn</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Tùy chọn Vận Chuyển</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Chính sách vận chuyển</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="infor">
+                <h3>Thông tin</h3>
+                <ul class="list__sub">
+                  <li class="list__sub-item">về Chúng Tôi</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Điều khoản &amp; điều kiện</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Chính Sách Riêng Tư</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Đơn đặt hàng và Returns</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> 
+              <div class="account">
+                <h3>MY ACCOUNT</h3>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Xem Giỏ hàng</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Sản phẩm yêu thích</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">kiểm tra</li>
+                </ul>
+                <ul class="list__sub">
+                  <li class="list__sub-item">Theo dõi đặt hàng của tôi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

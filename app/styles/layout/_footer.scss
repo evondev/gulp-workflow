@@ -1,0 +1,26 @@
+$color_title: #d1d1d1;
+.footer {
+  font-family: "Open Sans", sans-serif;
+  padding: 56px 0 40px;
+  background-color: #050505;
+  h3 {
+    font-size: 18px;
+    color: $color_title;
+    margin-bottom: 20px;
+  }
+  .list__sub {
+    font-weight: initial;
+    font-size: 14px;
+    color: #494949;
+    line-height: 30px;
+    &-item {
+      i {
+        color: #789629;
+        margin-right: 5px;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+  }
+}

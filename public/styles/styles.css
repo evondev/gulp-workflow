@@ -1,54 +1,68 @@
 .header {
   padding: 10px 0;
-  border-bottom: 1px solid #c1c1c1;
+  border-bottom: 1px solid #e7e7e7;
   font-family: sans-serif;
-  font-weight: bold; }
-  .header .header__section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .header .header__section .header__logo {
-      position: relative;
-      display: inline-block;
-      margin: auto 0;
-      width: 20%; }
-      .header .header__section .header__logo span {
-        display: inline-block;
-        width: 55px;
-        height: 55px;
-        border-radius: 55px;
-        background-color: #789629;
-        position: absolute;
-        top: -5px;
-        left: 0;
-        z-index: -1; }
-    .header .header__section .header__nav {
-      margin: auto 0;
-      width: 60%; }
-      .header .header__section .header__nav .category {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly; }
-        .header .header__section .header__nav .category .category__link {
-          color: #000;
-          text-decoration: none; }
-        .header .header__section .header__nav .category .category__link:hover, .header .header__section .header__nav .category .category__link:active {
-          color: #789629; }
-    .header .header__section .header__icon {
-      width: 7%;
+  font-weight: bold;
+  background-color: #f4f4f4; }
+  .header__logo {
+    display: inline-block; }
+  .header__nav {
+    -webkit-transform: translate(0%, 150%);
+    transform: translate(0%, 150%); }
+    .header__nav .category {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      margin: auto 0; }
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+      .header__nav .category__link {
+        color: #000;
+        text-decoration: none; }
+      .header__nav .category__link:hover, .header__nav .category__link:active {
+        color: #789629; }
+  .header__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-transform: translate(0%, 150%);
+    transform: translate(0%, 150%); }
+    .header__icon i:first-child {
+      margin-right: 20px; }
+
+.slide__item {
+  background-color: #f1f1f1;
+  text-align: center;
+  position: relative; }
+  .slide__item a {
+    position: absolute;
+    left: 200px;
+    bottom: 50px;
+    font-size: 18px;
+    color: #000;
+    font-family: "Open Sans", sans-serif; }
+
+.footer {
+  font-family: "Open Sans", sans-serif;
+  padding: 56px 0 40px;
+  background-color: #050505; }
+  .footer h3 {
+    font-size: 18px;
+    color: #d1d1d1;
+    margin-bottom: 20px; }
+  .footer .list__sub {
+    font-weight: initial;
+    font-size: 14px;
+    color: #494949;
+    line-height: 30px; }
+    .footer .list__sub-item i {
+      color: #789629;
+      margin-right: 5px; }
+    .footer .list__sub-item p {
+      display: inline-block; }
 
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com

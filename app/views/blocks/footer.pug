@@ -1,0 +1,49 @@
+.footer
+    .container
+        .row
+            .col-xs-2.col-sm-2.col-md-2.col-lg-2
+                .contact
+                    h3 Liên Hệ với chúng tôi
+                    ul.list__sub
+                        li.list__sub-item
+                            i.fas.fa-map-marker-alt
+                            p Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội
+                            
+                        li.list__sub-item
+                            i.fas.fa-phone-volume 
+                            p (04) 6674 2332 -
+                            i.fas.fa-phone 
+                            p (04) 3786 8904
+                        li.list__sub-item
+                            i.fas.fa-phone-volume 
+                            p (08) 6680 9686
+                            i.fas.fa-envelope
+                            p Support@bizweb.vn
+            .col-xs-2.col-sm-2.col-md-2.col-lg-2
+                .shipping
+                    h3 Chuyển Hàng
+                    - var list_shipping = ["mua sắm trực tuyến","Đến từ chúng tôi gửi đến","Chính sách vận chuyển","vận chuyển thông tin"]
+                    - for(var i = 0; i < list_shipping.length; i++)
+                        ul.list__sub
+                            li.list__sub-item= list_shipping[i]
+            .col-xs-2.col-sm-2.col-md-2.col-lg-2
+                .support
+                    h3 Hỗ trợ
+                    - var list_support = ["Câu chuyện của chúng ta","Thanh toán an toàn","Tùy chọn Vận Chuyển","Chính sách vận chuyển"]
+                    - for(var i = 0; i < list_support.length; i++)
+                        ul.list__sub
+                            li.list__sub-item= list_support[i]
+            .col-xs-2.col-sm-2.col-md-2.col-lg-2
+                .infor
+                    h3 Thông tin
+                    - var list_infor = ["về Chúng Tôi","Điều khoản & điều kiện","Chính Sách Riêng Tư","Đơn đặt hàng và Returns"]
+                    - for(var i = 0; i < list_infor.length; i++)
+                        ul.list__sub
+                            li.list__sub-item= list_infor[i]
+            .col-xs-2.col-sm-2.col-md-2.col-lg-2  
+                .account
+                    h3 MY ACCOUNT
+                    - var list_account = ["Xem Giỏ hàng","Sản phẩm yêu thích","kiểm tra","Theo dõi đặt hàng của tôi"]
+                    - for(var i = 0; i < list_account.length; i++)
+                        ul.list__sub
+                            li.list__sub-item= list_account[i]

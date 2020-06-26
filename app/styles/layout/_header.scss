@@ -1,51 +1,54 @@
-.header{
-    padding: 10px 0;
-    border-bottom: 1px solid #c1c1c1;
-    font-family: sans-serif;
-    font-weight: bold;
-    .header__section{
-        display: flex;
-        justify-content: space-between;
-        .header__logo{
-            position: relative;
-            display: inline-block;
-            margin: auto 0;
-            width: 20%;
-            span{
-                display: inline-block;
-                width: 55px;
-                height: 55px;
-                border-radius: 55px;
-                background-color: #789629;
-                position: absolute;
-                top: -5px;
-                left: 0;
-                z-index: -1;
-            }
-        }
+$color_black: #000;
 
-        .header__nav{
-            margin: auto 0;
-            width: 60%;
-            .category{
-                display: flex;
-                justify-content: space-evenly;
-                .category__link{
-                    color: #000;
-                    text-decoration: none;
-                }
-                .category__link:hover, .category__link:active{
-                    color: #789629;
-                }
-            }
-        }
+.header {
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #f4f4f4;
 
-        .header__icon{
-            width: 7%;
-            display: flex;
-            justify-content: space-between;
-            margin: auto 0;
-        }
+  &__logo {
+    display: inline-block;
+  }
+
+  &__nav {
+    transform: translate(0%, 150%);
+    .category {
+      display: flex;
+      justify-content: space-evenly;
+      &__link {
+        color: $color_black;
+        text-decoration: none;
+      }
+      &__link:hover,
+      &__link:active {
+        color: #789629;
+      }
     }
-    
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: flex-end;
+    transform: translate(0%, 150%);
+    i:first-child{
+      margin-right: 20px;
+    }
+  }
+}
+
+.slide {
+  &__item {
+    background-color: #f1f1f1;
+    text-align: center;
+    position: relative;
+    a {
+      position: absolute;
+      left: 200px;
+      bottom: 50px;
+      font-size: 18px;
+      color: $color_black;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
 }
