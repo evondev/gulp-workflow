@@ -1,0 +1,79 @@
+- const iconSocialNetwork = ['fa fa-facebook', 'fa fa-twitter', 'fa fa-youtube-play', 'fa fa-vimeo']
+- const thongTinKhachHang = ['Tài khoản của tôi', 'Sản phẩm yêu thích', 'Lịch sử mua hàng', 'Chính sách đổi trả', 'Góp ý khiếu nại']
+- const hoTroDichVu = ['Hệ thống cửa hàng', 'Hướng dẫn mua hàng', 'Hướng dẫn thanh toán', 'Tích điểm đổi quà', 'Câu hỏi thường gặp']
+- const chinhSachUuDai = ['Chính sách giao hàng', 'Chính sách đổi trả sản phẩm', 'Chính sách bảo hành', 'Giới thiệu sản phẩm mới', 'Chính sách trả góp']
+- const tinTuc = ['Tin mới', 'Khuyến mại', 'Tuyển dụng', 'Download', 'Tags']
+- const footerBottom = ['Sitemap', 'Danh mục sản phẩm', 'Hợp tác', 'Thông tin liên hệ', 'Câu hỏi thường gặp']
+- const card = ['fa fa-cc-visa', 'fa fa-cc-mastercard', 'fa fa-cc-paypal', 'fa fa-cc-discover']
+
+.footer
+    .footer__top
+        .container
+            .row
+                .col-xl-4
+                    .footer__top__left
+                        div
+                            b KÊNH THÔNG TIN TỪ CHÚNG TÔI
+                        div
+                            each item in iconSocialNetwork
+                                i.mr-4(class=item)
+                .col-xl-2
+                    .footer__top__middle
+                        b ĐĂNG KÝ NHẬN EMAIL TỪ CHÚNG TÔI
+                .col-xl-1
+                .col-xl-5
+                    .footer__top__right
+                        input.footer__top__input(type='text')
+                        button.footer__top__btn.fa.fa-paper-plane-o
+    .footer__middle
+        .container
+            .row
+                .col-xl-4.col-lg-6
+                    img(src='../../images/greenshop.png', alt='greenshop')
+                    p.mt-3
+                        | Green shop được thành lập từ 8/2010 được sự tin tưởng của
+                        | khách hàng trong suốt thời gian hoạt động đến nay cửa hàng
+                        | ngày một phát triển
+                    p
+                        i.ml-1.mr-2.fa.fa-mobile.footer__middle__icon-color
+                        | Điện thoại : (84-4) 66.558.868 
+                    p
+                        i.mr-2.fa.fa-envelope-o.footer__middle__icon-color
+                        | Email: info@dkt.com.vn
+                .col-xl-3.col-lg-6
+                    .footer__middle__title-menu 
+                        b THÔNG TIN KHÁCH HÀNG
+                    ul
+                        each item in thongTinKhachHang
+                            li.footer__middle__item= item
+                .col-xl-2.col-lg-4
+                    .footer__middle__title-menu 
+                        b HỔ TRỢ DỊCH VỤ
+                    ul
+                        each item in hoTroDichVu
+                            li.footer__middle__item= item              
+                .col-xl-2.col-lg-4
+                    .footer__middle__title-menu 
+                        b CHÍNH SÁCH ƯU ĐÃI                 
+                    ul
+                        each item in chinhSachUuDai
+                            li.footer__middle__item= item             
+                .col-xl-1.col-lg-4
+                    .footer__middle__title-menu 
+                        b TIN TỨC   
+                    ul
+                        each item in tinTuc
+                            li.footer__middle__item= item           
+    .footer__bottom.d-none.d-xl-block
+        .container
+            .row
+                .col-xl-6
+                    ul.footer__bottom__left
+                        each item in footerBottom
+                            li.footer__bottom__item= item       
+                .col-xl-6
+                    ul.footer__bottom__right
+                        each item in card
+                            li.footer__bottom__card(class=item)
+    .footer__design
+        .footer__design__main Thiết kế bởi Bizweb ©

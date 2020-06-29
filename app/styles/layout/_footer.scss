@@ -1,0 +1,102 @@
+.footer {
+  font-family: $font-primary;
+  background-color: $color-black-2;
+
+  &__top {
+    font-size: $font-size-14;
+    padding: 33px 0px;
+    color: $color-grey-dark-7;
+
+    &__left,
+    &__middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__right {
+      display: flex;
+      height: 46px;
+    }
+
+    &__input {
+      flex: 15;
+      padding: 0px 10px;
+      outline: none;
+    }
+
+    &__btn {
+      flex: 2;
+      color: $color-white;
+      background-color: $color-green-1;
+      border: none;
+    }
+  }
+
+  &__middle {
+    font-size: $font-size-11;
+    border-width: 1px 0px;
+    border-style: groove;
+    border-color: $color-grey-dark-5;
+    padding: 42px 0px 35px 0px;
+    color: $color-grey-dark-9;
+
+    &__icon-color {
+      color: $color-green-1;
+    }
+
+    &__title-menu {
+      font-size: $font-size-14;
+      color: $color-green-1;
+      margin: 20px 0px 32px 0px;
+    }
+
+    &__item {
+      margin-bottom: 21px;
+    }
+
+    &__item::before {
+      content: "\203A";
+    }
+  }
+
+  &__bottom {
+    font-size: $font-size-12;
+    color: $color-grey-dark-9;
+    padding: 25px 0px;
+
+    &__left,
+    &__right {
+      display: flex;
+      align-items: center;
+      margin: 0px;
+      height: 100%;
+    }
+
+    &__item {
+      margin: 0px 15px 0px 0px;
+    }
+
+    &__right {
+      justify-content: flex-end;
+    }
+
+    &__card {
+      margin: 0px 0px 0px 15px;
+    }
+  }
+
+  &__design {
+    font-size: $font-size-14;
+    background-color: $color-grey-dark-10;
+    color: $color-grey-light-3;
+
+    &__main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 0px;
+    }
+  }
+}
