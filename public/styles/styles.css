@@ -3,7 +3,6 @@
   background-color: #313131; }
   .footer__top {
     font-size: 14px;
-    padding: 33px 0px;
     color: #898989; }
     .footer__top__left, .footer__top__middle {
       display: -webkit-box;
@@ -16,12 +15,18 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      height: 100%; }
+      height: 100%;
+      padding-top: 34px; }
+    .footer__top__left b {
+      padding-bottom: 13px; }
+    .footer__top__middle b {
+      padding-bottom: 13px; }
     .footer__top__right {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 46px; }
+      height: 46px;
+      margin-bottom: 40px; }
     .footer__top__input {
       -webkit-box-flex: 15;
       -ms-flex: 15;
@@ -40,19 +45,57 @@
     border-width: 1px 0px;
     border-style: groove;
     border-color: #999999;
-    padding: 42px 0px 35px 0px;
     color: #b7b7b7; }
+    .footer__middle img {
+      padding: 20px 0px; }
+    .footer__middle__gioithieu p {
+      margin: 0px;
+      padding-bottom: 10px; }
+    .footer__middle__lienhe {
+      display: none; }
     .footer__middle__icon-color {
       color: #3fb871; }
     .footer__middle__title-menu {
       font-size: 14px;
       color: #3fb871;
-      margin: 20px 0px 32px 0px; }
+      margin-top: 35px; }
+    .footer__middle ul {
+      margin: 0px; }
     .footer__middle__item {
-      margin-bottom: 21px; }
+      margin-top: 22px; }
     .footer__middle__item::before {
-      content: "\203A"; }
+      content: "\203A  "; }
   .footer__bottom {
+    display: none; }
+  .footer__design {
+    font-size: 14px;
+    background-color: #434343;
+    color: #f2f2f2; }
+    .footer__design__main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 12px 0px; }
+
+@media (min-width: 1200px) {
+  .footer__top__left, .footer__top__middle {
+    padding-top: 0px; }
+  .footer__top__left b {
+    padding-bottom: 5px; }
+  .footer__top__middle b {
+    padding-bottom: 0px; }
+  .footer__top__middle b span {
+    display: block; }
+  .footer__top__right {
+    margin: 34px 0px; }
+  .footer__bottom {
+    display: block;
     font-size: 12px;
     color: #b7b7b7;
     padding: 25px 0px; }
@@ -72,22 +115,7 @@
       -ms-flex-pack: end;
       justify-content: flex-end; }
     .footer__bottom__card {
-      margin: 0px 0px 0px 15px; }
-  .footer__design {
-    font-size: 14px;
-    background-color: #434343;
-    color: #f2f2f2; }
-    .footer__design__main {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      padding: 12px 0px; }
+      margin: 0px 0px 0px 15px; } }
 
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com

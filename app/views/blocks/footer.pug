@@ -10,61 +10,62 @@
     .footer__top
         .container
             .row
-                .col-xl-4
+                .col-sm-12.col-xl-4
                     .footer__top__left
-                        div
-                            b KÊNH THÔNG TIN TỪ CHÚNG TÔI
+                        b KÊNH THÔNG TIN TỪ CHÚNG TÔI
                         div
                             each item in iconSocialNetwork
                                 i.mr-4(class=item)
-                .col-xl-2
+                .col-sm-12.col-xl-3
                     .footer__top__middle
-                        b ĐĂNG KÝ NHẬN EMAIL TỪ CHÚNG TÔI
-                .col-xl-1
-                .col-xl-5
+                        b 
+                            span ĐĂNG KÝ NHẬN 
+                            span EMAIL TỪ CHÚNG TÔI
+                .col-sm-7.col-md-6.col-lg-5.col-xl-5
                     .footer__top__right
                         input.footer__top__input(type='text')
                         button.footer__top__btn.fa.fa-paper-plane-o
     .footer__middle
         .container
             .row
-                .col-xl-4.col-lg-6
+                .col-sm-12
                     img(src='../../images/greenshop.png', alt='greenshop')
-                    p.mt-3
-                        | Green shop được thành lập từ 8/2010 được sự tin tưởng của
-                        | khách hàng trong suốt thời gian hoạt động đến nay cửa hàng
-                        | ngày một phát triển
-                    p
-                        i.ml-1.mr-2.fa.fa-mobile.footer__middle__icon-color
-                        | Điện thoại : (84-4) 66.558.868 
-                    p
-                        i.mr-2.fa.fa-envelope-o.footer__middle__icon-color
-                        | Email: info@dkt.com.vn
-                .col-xl-3.col-lg-6
+                    div.footer__middle__gioithieu
+                        p Green shop được thành lập từ 8/2010 được sự tin 
+                        p tưởng của khách hàng trong suốt thời gian hoạt động đến 
+                        p nay cửa hàng ngày một phát triển
+                    div.footer__middle__lienhe           
+                        p
+                            i.ml-1.mr-2.fa.fa-mobile.footer__middle__icon-color
+                            | Điện thoại : (84-4) 66.558.868 
+                        p
+                            i.mr-2.fa.fa-envelope-o.footer__middle__icon-color
+                            | Email: info@dkt.com.vn
+                .col-sm-12
                     .footer__middle__title-menu 
                         b THÔNG TIN KHÁCH HÀNG
                     ul
                         each item in thongTinKhachHang
                             li.footer__middle__item= item
-                .col-xl-2.col-lg-4
+                .col-sm-12
                     .footer__middle__title-menu 
                         b HỔ TRỢ DỊCH VỤ
                     ul
                         each item in hoTroDichVu
                             li.footer__middle__item= item              
-                .col-xl-2.col-lg-4
+                .col-sm-12
                     .footer__middle__title-menu 
                         b CHÍNH SÁCH ƯU ĐÃI                 
                     ul
                         each item in chinhSachUuDai
                             li.footer__middle__item= item             
-                .col-xl-1.col-lg-4
+                .col-sm-12
                     .footer__middle__title-menu 
                         b TIN TỨC   
                     ul
                         each item in tinTuc
                             li.footer__middle__item= item           
-    .footer__bottom.d-none.d-xl-block
+    .footer__bottom
         .container
             .row
                 .col-xl-6

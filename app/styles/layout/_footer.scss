@@ -4,7 +4,6 @@
 
   &__top {
     font-size: $font-size-14;
-    padding: 33px 0px;
     color: $color-grey-dark-7;
 
     &__left,
@@ -13,11 +12,21 @@
       flex-direction: column;
       justify-content: center;
       height: 100%;
+      padding-top: 34px;
+    }
+
+    &__left b {
+      padding-bottom: 13px;
+    }
+
+    &__middle b {
+      padding-bottom: 13px;
     }
 
     &__right {
       display: flex;
       height: 46px;
+      margin-bottom: 40px;
     }
 
     &__input {
@@ -39,8 +48,20 @@
     border-width: 1px 0px;
     border-style: groove;
     border-color: $color-grey-dark-5;
-    padding: 42px 0px 35px 0px;
     color: $color-grey-dark-9;
+
+    img {
+      padding: 20px 0px;
+    }
+
+    &__gioithieu p {
+      margin: 0px;
+      padding-bottom: 10px;
+    }
+
+    &__lienhe {
+      display: none;
+    }
 
     &__icon-color {
       color: $color-green-1;
@@ -49,42 +70,24 @@
     &__title-menu {
       font-size: $font-size-14;
       color: $color-green-1;
-      margin: 20px 0px 32px 0px;
+      margin-top: 35px;
+    }
+
+    ul {
+      margin: 0px;
     }
 
     &__item {
-      margin-bottom: 21px;
+      margin-top: 22px;
     }
 
     &__item::before {
-      content: "\203A";
+      content: "\203A  ";
     }
   }
 
   &__bottom {
-    font-size: $font-size-12;
-    color: $color-grey-dark-9;
-    padding: 25px 0px;
-
-    &__left,
-    &__right {
-      display: flex;
-      align-items: center;
-      margin: 0px;
-      height: 100%;
-    }
-
-    &__item {
-      margin: 0px 15px 0px 0px;
-    }
-
-    &__right {
-      justify-content: flex-end;
-    }
-
-    &__card {
-      margin: 0px 0px 0px 15px;
-    }
+    display: none;
   }
 
   &__design {
@@ -97,6 +100,60 @@
       justify-content: center;
       align-items: center;
       padding: 12px 0px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    &__top {
+      &__left,
+      &__middle {
+        padding-top: 0px;
+      }
+
+      &__left b {
+        padding-bottom: 5px;
+      }
+
+      &__middle b {
+        padding-bottom: 0px;
+      }
+
+      &__middle b span {
+        display: block;
+      }
+
+      &__right {
+        margin: 34px 0px;
+      }
+    }
+
+    &__bottom {
+      display: block;
+      font-size: $font-size-12;
+      color: $color-grey-dark-9;
+      padding: 25px 0px;
+
+      &__left,
+      &__right {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        height: 100%;
+      }
+
+      &__item {
+        margin: 0px 15px 0px 0px;
+      }
+
+      &__right {
+        justify-content: flex-end;
+      }
+
+      &__card {
+        margin: 0px 0px 0px 15px;
+      }
     }
   }
 }
