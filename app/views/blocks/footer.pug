@@ -1,8 +1,8 @@
-- const iconSocialNetwork = ['fa fa-facebook', 'fa fa-twitter', 'fa fa-youtube-play', 'fa fa-vimeo']
-- const thongTinKhachHang = ['Tài khoản của tôi', 'Sản phẩm yêu thích', 'Lịch sử mua hàng', 'Chính sách đổi trả', 'Góp ý khiếu nại']
-- const hoTroDichVu = ['Hệ thống cửa hàng', 'Hướng dẫn mua hàng', 'Hướng dẫn thanh toán', 'Tích điểm đổi quà', 'Câu hỏi thường gặp']
-- const chinhSachUuDai = ['Chính sách giao hàng', 'Chính sách đổi trả sản phẩm', 'Chính sách bảo hành', 'Giới thiệu sản phẩm mới', 'Chính sách trả góp']
-- const tinTuc = ['Tin mới', 'Khuyến mại', 'Tuyển dụng', 'Download', 'Tags']
+- const iconSocial = ['fa fa-facebook', 'fa fa-twitter', 'fa fa-youtube-play', 'fa fa-vimeo']
+- const customerInfo = ['Tài khoản của tôi', 'Sản phẩm yêu thích', 'Lịch sử mua hàng', 'Chính sách đổi trả', 'Góp ý khiếu nại']
+- const supportServices = ['Hệ thống cửa hàng', 'Hướng dẫn mua hàng', 'Hướng dẫn thanh toán', 'Tích điểm đổi quà', 'Câu hỏi thường gặp']
+- const incentives = ['Chính sách giao hàng', 'Chính sách đổi trả sản phẩm', 'Chính sách bảo hành', 'Giới thiệu sản phẩm mới', 'Chính sách trả góp']
+- const news = ['Tin mới', 'Khuyến mại', 'Tuyển dụng', 'Download', 'Tags']
 - const footerBottom = ['Sitemap', 'Danh mục sản phẩm', 'Hợp tác', 'Thông tin liên hệ', 'Câu hỏi thường gặp']
 - const card = ['fa fa-cc-visa', 'fa fa-cc-mastercard', 'fa fa-cc-paypal', 'fa fa-cc-discover']
 
@@ -12,58 +12,56 @@
             .row
                 .col-sm-12.col-xl-4
                     .footer__top__left
-                        b KÊNH THÔNG TIN TỪ CHÚNG TÔI
-                        div
-                            each item in iconSocialNetwork
+                        p KÊNH THÔNG TIN TỪ CHÚNG TÔI
+                        div 
+                            each item in iconSocial
                                 i.mr-4(class=item)
-                .col-sm-12.col-xl-3
+                .col-sm-12.col-xl-2
                     .footer__top__middle
-                        b 
-                            span ĐĂNG KÝ NHẬN 
-                            span EMAIL TỪ CHÚNG TÔI
+                        p ĐĂNG KÝ NHẬN EMAIL TỪ CHÚNG TÔI
+                .col-xl-1
                 .col-sm-7.col-md-6.col-lg-5.col-xl-5
                     .footer__top__right
                         input.footer__top__input(type='text')
-                        button.footer__top__btn.fa.fa-paper-plane-o
+                        button.footer__top__btn
+                            i.fa.fa-paper-plane-o
     .footer__middle
         .container
             .row
-                .col-sm-12
+                .col-sm-7.col-md-6.col-lg-5.col-xl-4
                     img(src='../../images/greenshop.png', alt='greenshop')
-                    div.footer__middle__gioithieu
-                        p Green shop được thành lập từ 8/2010 được sự tin 
-                        p tưởng của khách hàng trong suốt thời gian hoạt động đến 
-                        p nay cửa hàng ngày một phát triển
-                    div.footer__middle__lienhe           
+                    div.footer__middle__introduce
+                        p Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển
+                    div.footer__middle__contact          
                         p
                             i.ml-1.mr-2.fa.fa-mobile.footer__middle__icon-color
                             | Điện thoại : (84-4) 66.558.868 
                         p
                             i.mr-2.fa.fa-envelope-o.footer__middle__icon-color
                             | Email: info@dkt.com.vn
-                .col-sm-12
+                .col-sm-12.col-md-6.col-lg-3.col-xl-3
                     .footer__middle__title-menu 
                         b THÔNG TIN KHÁCH HÀNG
                     ul
-                        each item in thongTinKhachHang
+                        each item in customerInfo
                             li.footer__middle__item= item
-                .col-sm-12
+                .col-sm-12.col-md-6.col-lg-3.col-xl-2
                     .footer__middle__title-menu 
                         b HỔ TRỢ DỊCH VỤ
                     ul
-                        each item in hoTroDichVu
+                        each item in supportServices
                             li.footer__middle__item= item              
-                .col-sm-12
+                .col-sm-12.col-md-6.col-lg-5.col-xl-2
                     .footer__middle__title-menu 
                         b CHÍNH SÁCH ƯU ĐÃI                 
                     ul
-                        each item in chinhSachUuDai
+                        each item in incentives
                             li.footer__middle__item= item             
-                .col-sm-12
+                .col-sm-12.col-md-6.col-lg-3.col-xl-1
                     .footer__middle__title-menu 
                         b TIN TỨC   
                     ul
-                        each item in tinTuc
+                        each item in news
                             li.footer__middle__item= item           
     .footer__bottom
         .container

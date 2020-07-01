@@ -4,42 +4,37 @@
 
   &__top {
     font-size: $font-size-14;
-    color: $color-grey-dark-7;
+    font-weight: bold;
+    color: $color-green-1;
+    padding: 34px 0px 40px;
 
-    &__left,
-    &__middle {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100%;
-      padding-top: 34px;
+    &__left i {
+      color: $color-white;
+      font-size: $font-size-23;
     }
 
-    &__left b {
-      padding-bottom: 13px;
-    }
-
-    &__middle b {
-      padding-bottom: 13px;
+    &__left div {
+      margin-bottom: 30px;
     }
 
     &__right {
       display: flex;
+      flex-direction: row;
       height: 46px;
-      margin-bottom: 40px;
     }
 
     &__input {
-      flex: 15;
-      padding: 0px 10px;
+      flex: 1;
       outline: none;
+      border: none;
+      padding: 0px 10px;
     }
 
     &__btn {
-      flex: 2;
       color: $color-white;
       background-color: $color-green-1;
       border: none;
+      width: 50px;
     }
   }
 
@@ -49,17 +44,18 @@
     border-style: groove;
     border-color: $color-grey-dark-5;
     color: $color-grey-dark-9;
+    padding-bottom: 45px;
 
     img {
       padding: 20px 0px;
     }
 
-    &__gioithieu p {
+    &__introduce p {
+      line-height: 2;
       margin: 0px;
-      padding-bottom: 10px;
     }
 
-    &__lienhe {
+    &__contact {
       display: none;
     }
 
@@ -70,7 +66,7 @@
     &__title-menu {
       font-size: $font-size-14;
       color: $color-green-1;
-      margin-top: 35px;
+      margin-top: 38px;
     }
 
     ul {
@@ -106,26 +102,102 @@
 
 @media (min-width: 1200px) {
   .footer {
+    // font-family: $font-primary;
+    // background-color: $color-black-2;
+
     &__top {
-      &__left,
-      &__middle {
-        padding-top: 0px;
+      // font-size: $font-size-14;
+      // font-weight: bold;
+      color: $color-grey-dark-7;
+      padding: 33px 0px 34px;
+
+      &__left i {
+        font-size: $font-size-16;
+        color: $color-grey-dark-7;
       }
 
-      &__left b {
-        padding-bottom: 5px;
+      &__left p {
+        margin-bottom: 7px;
       }
 
-      &__middle b {
-        padding-bottom: 0px;
+      &__middle p {
+        margin: 0px;
       }
 
-      &__middle b span {
-        display: block;
+      &__left div {
+        margin-bottom: 0px;
       }
 
       &__right {
-        margin: 34px 0px;
+        // display: flex;
+        // flex-direction: row;
+        // height: 46px;
+      }
+
+      &__input {
+        // flex: 1;
+        // outline: none;
+        // border: none;
+        // padding: 0px 10px;
+      }
+
+      &__btn {
+        // color: $color-white;
+        // background-color: $color-green-1;
+        // border: none;
+        // width: 50px;
+      }
+    }
+
+    &__middle {
+      // font-size: $font-size-11;
+      // border-width: 1px 0px;
+      // border-style: groove;
+      // border-color: $color-grey-dark-5;
+      // color: $color-grey-dark-9;
+      padding: 40px 0px 60px;
+
+      img {
+        padding: 0px 0px 20px;
+      }
+
+      &__introduce p {
+        line-height: 2;
+        margin: 0px;
+      }
+
+      &__contact {
+        display: block;
+
+        & p:first-child {
+          margin-top: 16px;
+        }
+
+        & p:last-child {
+          margin: 0px;
+        }
+      }
+
+      &__icon-color {
+        color: $color-green-1;
+      }
+
+      &__title-menu {
+        font-size: $font-size-14;
+        color: $color-green-1;
+        margin-top: 20px;
+      }
+
+      ul {
+        margin: 0px;
+      }
+
+      &__item {
+        margin-top: 22px;
+      }
+
+      &__item::before {
+        content: "\203A  ";
       }
     }
 
