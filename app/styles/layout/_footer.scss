@@ -102,12 +102,7 @@
 
 @media (min-width: 1200px) {
   .footer {
-    // font-family: $font-primary;
-    // background-color: $color-black-2;
-
     &__top {
-      // font-size: $font-size-14;
-      // font-weight: bold;
       color: $color-grey-dark-7;
       padding: 33px 0px 34px;
 
@@ -127,34 +122,9 @@
       &__left div {
         margin-bottom: 0px;
       }
-
-      &__right {
-        // display: flex;
-        // flex-direction: row;
-        // height: 46px;
-      }
-
-      &__input {
-        // flex: 1;
-        // outline: none;
-        // border: none;
-        // padding: 0px 10px;
-      }
-
-      &__btn {
-        // color: $color-white;
-        // background-color: $color-green-1;
-        // border: none;
-        // width: 50px;
-      }
     }
 
     &__middle {
-      // font-size: $font-size-11;
-      // border-width: 1px 0px;
-      // border-style: groove;
-      // border-color: $color-grey-dark-5;
-      // color: $color-grey-dark-9;
       padding: 40px 0px 60px;
 
       img {
@@ -178,26 +148,8 @@
         }
       }
 
-      &__icon-color {
-        color: $color-green-1;
-      }
-
       &__title-menu {
-        font-size: $font-size-14;
-        color: $color-green-1;
         margin-top: 20px;
-      }
-
-      ul {
-        margin: 0px;
-      }
-
-      &__item {
-        margin-top: 22px;
-      }
-
-      &__item::before {
-        content: "\203A  ";
       }
     }
 
